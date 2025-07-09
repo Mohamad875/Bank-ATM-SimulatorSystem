@@ -1,0 +1,99 @@
+
+.custom-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    margin: 10px;
+    border-radius: 0px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 500px;
+    box-sizing: border-box;
+    margin-right: -30px;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.custombutton1::before, .custombutton2::before, .custombutton3::before {
+    content: "";
+    position: relative;
+    background-color: black;
+    width: 89px;
+    height: 81px;
+    left: 361px;
+    transform: skewX(25deg);
+    top: 30px;
+    z-index: -1;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    position: relative; 
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    margin-top: 100px;
+}
+
+.buttons-left, .buttons-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons-right .custom-button {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.buttons-left {
+    align-items: flex-start; 
+}
+
+.buttons-right {
+    align-items: flex-end; 
+}
+
+.balance-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#balance-amount {
+    color: #007bff;
+}
+
+
+.logout-button {
+    position: absolute; 
+    top: 100px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 53px;
+}
+
+
+.logout-button:hover {
+    background-color: #333333;
+    transform: scale(1.1);
+}
